@@ -6,3 +6,4 @@ build/
 project/project/
 project/target/
 target/
+/logs
