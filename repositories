@@ -1,0 +1,5 @@
+[repositories]
+  local
+  maven-local
+  my-maven-proxy-releases: http://nexus.twdns.top/repository/maven-public/
+  my-ivy-proxy-releases: http://nexus.twdns.top/repository/ivy-public/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
