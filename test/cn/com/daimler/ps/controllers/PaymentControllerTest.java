@@ -1,4 +1,4 @@
-package controllers;
+package cn.com.daimler.ps.controllers;
 
 import org.junit.Test;
 import play.Application;

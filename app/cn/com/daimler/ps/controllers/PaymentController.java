@@ -1,4 +1,4 @@
-package controllers;
+package cn.com.daimler.ps.controllers;
 
 import play.mvc.Controller;
 import play.mvc.Result;

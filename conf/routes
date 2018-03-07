@@ -2,4 +2,4 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-POST    /api/payment                controllers.PaymentController.apply
+POST    /api/payment        cn.com.daimler.ps.controllers.PaymentController.apply
