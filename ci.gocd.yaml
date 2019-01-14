@@ -6,7 +6,7 @@ pipelines:
       spec: "* * * * * ?"
     materials:
       mygit:
-        git: https://117.121.110.36/daimler-payment/payment-service.git
+        git: https://****.git
     stages:
       - test:
           clean_workspace: true
@@ -48,7 +48,7 @@ pipelines:
                     options:
                       ImageName: payment-service
                       DockerFileName: Dockerfile
-                      RegistryUsername: daimlermme
+                      RegistryUsername: projectName
                       RegistryPassword: docker2017!
                       Username: payment
                       RegistryURL: 117.121.110.38:443
@@ -64,7 +64,7 @@ pipelines:
       spec: "0 0 6 ? * MON-FRI"
     materials:
       mygit:
-        git: https://117.121.110.36/daimler-payment/payment-service.git
+        git: https://****.git
     stages:
       - sonar:
           clean_workspace: true

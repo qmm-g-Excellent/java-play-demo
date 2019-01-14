@@ -1,3 +1,2 @@
 -Dsbt.override.build.repos=true
 -Dsbt.repository.config=repositories
--J--add-modules=java.xml.bind

@@ -1,5 +1,5 @@
 name := """payment-service"""
-organization := "daimler"
+organization := "play"
 
 version := "1.0-SNAPSHOT"
 
@@ -7,4 +7,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.12.4"
 
-libraryDependencies += guice
+libraryDependencies ++= Seq(
+  guice,
+  "org.apache.httpcomponents"      % "httpclient"                   % "4.5.3",
+)
