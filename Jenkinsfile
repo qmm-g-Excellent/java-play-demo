@@ -7,8 +7,10 @@ pipeline {
        pollSCM('H/3 * * * 1-5')
    }
 
+
+
     environment {
-           sh 'echo "-----branch-----" ${env.BRANCH_NAME} '
+
         MYBRANCH = "${env.BRANCH_NAME}"
 
         GROUP_NAME = 'java-service'
@@ -24,6 +26,8 @@ pipeline {
                 sh """
                     sbt clean test
                 """
+                sh 'echo ======='
+                sh 'echo ${env.BUILD_NUMBER}'
             }
         }
 
