@@ -26,8 +26,6 @@ pipeline {
                 sh """
                     sbt clean test
                 """
-                sh 'echo ======='
-                sh 'echo "${env.BRANCH_NAME}"'
             }
         }
 
