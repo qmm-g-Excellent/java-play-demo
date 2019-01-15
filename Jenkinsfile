@@ -35,7 +35,6 @@ pipeline {
                     sh 'echo "-----Build stage-----"'
                     sh 'sbt clean dist'
                     sh 'unzip -o target/universal/java-play-demo-*.zip'
-                    sh "docker build -t ${BASE_IMAGE_TAG}:${env.BUILD_NUMBER} ."
                 }
             }
         }
