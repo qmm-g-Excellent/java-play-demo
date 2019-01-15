@@ -1,5 +1,4 @@
 pipeline {
-    agent { label  'java-play-demo' }
     options{
         buildDiscarder(logRotator(numToKeepStr:'5'))
     }
