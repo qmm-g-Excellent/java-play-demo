@@ -1,4 +1,4 @@
-name := """payment-service"""
+name := """java-play-demo"""
 organization := "play"
 
 version := "1.0-SNAPSHOT"

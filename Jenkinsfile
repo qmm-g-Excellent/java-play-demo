@@ -1,7 +1,7 @@
 pipeline {
     agent any
     options{
-        buildDiscarder(logRotator(numToKeepStr:'5'))
+        buildDiscarder(logRotator(numToKeepStr:'10'))
     }
    triggers{
        pollSCM('H/3 * * * 1-5')
@@ -27,7 +27,7 @@ pipeline {
                     sbt clean test
                 """
                 sh 'echo ======='
-                sh 'echo "${GROUP_NAME}/${SERVICE_NAME}"'
+                sh 'echo "${env.BRANCH_NAME}"'
             }
         }
 
