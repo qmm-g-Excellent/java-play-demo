@@ -27,7 +27,7 @@ pipeline {
                     sbt clean test
                 """
                 sh 'echo ======='
-                sh 'echo ${env.BUILD_NUMBER}'
+                sh 'echo ""${GROUP_NAME}/${SERVICE_NAME}"'
             }
         }
 
