@@ -2,14 +2,13 @@ pipeline {
     agent { label  'java-play-demo' }
     options{
         buildDiscarder(logRotator(numToKeepStr:'5'))
-        timestamps()
     }
    triggers{
        pollSCM('H/3 * * * 1-5')
    }
 
     environment {
-
+           sh 'echo "-----branch-----" ${env.BRANCH_NAME} '
         MYBRANCH = "${env.BRANCH_NAME}"
 
         GROUP_NAME = 'java-service'
