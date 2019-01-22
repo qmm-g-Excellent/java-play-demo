@@ -7,8 +7,6 @@ pipeline {
        pollSCM('H/3 * * * 1-5')
    }
 
-
-
     environment {
 
         MYBRANCH = "${env.BRANCH_NAME}"

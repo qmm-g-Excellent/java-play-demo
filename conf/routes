@@ -2,4 +2,4 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-POST    /api/payment        cn.com.play.controllers.OrderController.apply
+GET    /api/payment        cn.com.play.controllers.OrderController.apply
