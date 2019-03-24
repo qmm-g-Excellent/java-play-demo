@@ -12,7 +12,9 @@ lazy val commonSettings = Seq(
     ws,
     "org.apache.httpcomponents" % "httpclient" % "4.5.3",
     "redis.clients" % "jedis" % "2.9.0",
-    "org.projectlombok" % "lombok" % "1.16.16"
+    "org.projectlombok" % "lombok" % "1.16.16",
+    "org.apache.pdfbox" % "pdfbox" % "2.0.8",
+    "org.apache.pdfbox" % "pdfbox-tools" % "2.0.8"
   )
 )
 
