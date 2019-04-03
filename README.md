@@ -1,3 +1,5 @@
+**this is a sample example for Java and Play demo**
+
 内容整理：
 
 jsonUtil 
